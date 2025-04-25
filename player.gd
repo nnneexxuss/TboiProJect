@@ -24,7 +24,7 @@ func shoot(direcao_tiro: Vector2):
 		#tiro.velocity = direcao_tiro * 200  # velocidade do tiro
 	#else:
 		#print("O tiro não tem variável 'velocity'!")
-	tiro.velocity = direcao_tiro * 300
+	tiro.velocity = direcao_tiro * 400
 	pode_meter_bala = false
 	$Timer.start()
 	get_parent().add_child(tiro)

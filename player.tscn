@@ -109,7 +109,7 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2mqh"]
 size = Vector2(38, 12)
 
-[node name="Personagem" type="CharacterBody2D"]
+[node name="Personagem" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_rbigd")
 tiro_scene = ExtResource("2_r6bhn")
 
@@ -126,7 +126,7 @@ libraries = {
 }
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.155
+wait_time = 0.6
 autostart = true
 
 [node name="Camera2D" type="Camera2D" parent="."]

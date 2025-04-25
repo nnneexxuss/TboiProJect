@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d00b4eot1aldj"]
+[gd_scene load_steps=21 format=3 uid="uid://d00b4eot1aldj"]
 
 [ext_resource type="Script" path="res://tiro.gd" id="1_d8g46"]
 [ext_resource type="Texture2D" uid="uid://cutqoufqvvqqg" path="res://sprites/bulletatlas.png" id="1_rbs0j"]
@@ -6,10 +6,136 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_13n7f"]
 radius = 8.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_bu03m"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(192, 0, 32, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0vxv"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpf6u"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(320, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdw5n"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(384, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8osc6"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(448, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38mtg"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(256, 320, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5ksu"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(320, 320, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kk5x"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(384, 320, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qquex"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(448, 320, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0pth"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(256, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2h7fj"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(320, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66a24"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(384, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilbt8"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(448, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqqc7"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(256, 448, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2evau"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(320, 448, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82alw"]
+atlas = ExtResource("1_rbs0j")
+region = Rect2(384, 448, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eexw8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bu03m")
+}],
+"loop": true,
+"name": &"bala",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0vxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dpf6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdw5n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8osc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38mtg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5ksu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1kk5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qquex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0pth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2h7fj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66a24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilbt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqqc7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2evau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82alw")
+}],
+"loop": false,
+"name": &"explosão",
+"speed": 20.0
+}]
+
 [node name="tears" type="Area2D"]
 script = ExtResource("1_d8g46")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_rbs0j")
 region_enabled = true
@@ -18,5 +144,15 @@ region_rect = Rect2(233, 8, 15, 15)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_13n7f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 6)
+scale = Vector2(1.59375, 1.51923)
+sprite_frames = SubResource("SpriteFrames_eexw8")
+animation = &"explosão"
+autoplay = "bala"
+frame = 14
+frame_progress = 1.0
+flip_h = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
