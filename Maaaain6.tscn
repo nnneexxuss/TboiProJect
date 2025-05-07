@@ -495,4 +495,4 @@ position = Vector2(586, 330)
 
 [node name="portal2" parent="." instance=ExtResource("7_plqqy")]
 position = Vector2(976, 325)
-nextScene = "res://Maaaain5.tscn"
+nextScene = "res://Maaaain2.tscn"
