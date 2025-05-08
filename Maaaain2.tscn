@@ -705,7 +705,7 @@ x_draw_order_reversed = true
 y_sort_enabled = true
 position = Vector2(817, -812)
 scale = Vector2(0.47, 0.47)
-tile_map_data = PackedByteArray("AAD5/4QAAQAQAAAAAAAJAHwAAAAYAAgAAAD0/4IAAAAYAAgAAGCy/7EAAgAAAAAAAADD/4sAAgAIAAAAAAC8/4sAAgAAAAAAAAAEAJ0AAgAAAAAAAAAEALQAAgAQAAAAAAANALAAAgAIAAAAAAADAHoAAgAIAAAAAADA/2EAAgAYAAAAAADI/2EAAgAYAAAAAAAAACQAAgAYAAAAAAAQACUAAgAYAAAAAAA=")
+tile_map_data = PackedByteArray("AAD5/4QAAQAQAAAAAAAJAHwAAAAYAAgAAAD0/4IAAAAYAAgAAGCy/7EAAgAAAAAAAADD/4sAAgAIAAAAAAC8/4sAAgAAAAAAAAAEAJ0AAgAAAAAAAAANALAAAgAIAAAAAAADAHoAAgAIAAAAAADA/2EAAgAYAAAAAADI/2EAAgAYAAAAAAAAACQAAgAYAAAAAAAQACUAAgAYAAAAAAAFALUAAgAYAAAAAAA=")
 tile_set = SubResource("TileSet_ylgbw")
 
 [node name="DecoTile3" type="TileMapLayer" parent="Cenario"]
@@ -740,10 +740,14 @@ texture = ExtResource("11_h323p")
 
 [node name="portal" parent="Portas" instance=ExtResource("3_4qgsi")]
 position = Vector2(562, 794)
-nextScene = "res://Maaaain2.tscn"
+nextScene = "res://Maaaain1.tscn"
 
 [node name="portal2" parent="Portas" instance=ExtResource("3_4qgsi")]
 position = Vector2(816, -626)
+nextScene = "res://Maaaain3.tscn"
+
+[node name="portal3" parent="Portas" instance=ExtResource("3_4qgsi")]
+position = Vector2(-23, 336)
 nextScene = "res://Maaaain3.tscn"
 
 [node name="Player" type="Node" parent="."]
