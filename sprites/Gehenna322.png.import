@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mwgawisf2t8e"
-path="res://.godot/imported/Gehenna332-1.png.png-bafff92d29cd877386c6e23af840fba8.ctex"
+uid="uid://ckglorkjlr6qs"
+path="res://.godot/imported/Gehenna322.png-6e26012931e16911b758aa2f134cb8fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Gehenna332-1.png.png"
-dest_files=["res://.godot/imported/Gehenna332-1.png.png-bafff92d29cd877386c6e23af840fba8.ctex"]
+source_file="res://sprites/Gehenna322.png"
+dest_files=["res://.godot/imported/Gehenna322.png-6e26012931e16911b758aa2f134cb8fd.ctex"]
 
 [params]
 
