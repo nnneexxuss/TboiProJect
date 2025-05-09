@@ -585,7 +585,7 @@ tile_set = SubResource("TileSet_qdwwy")
 
 [node name="portal" parent="Portas" instance=ExtResource("9_luqn2")]
 position = Vector2(495, 76)
-nextScene = "res://Maaaain5.tscn"
+nextScene = "res://Maaaain9.tscn"
 
 [node name="Player" type="Node" parent="."]
 
