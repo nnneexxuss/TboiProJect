@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://d3mgu41d7wanp"]
+[gd_scene load_steps=21 format=4 uid="uid://d3mgu41d7wanp"]
 
 [ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="1_up5g4"]
 [ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="2_xfspt"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bt204lv1t56ki" path="res://sprites/Controls-1.png.png" id="5_c4w50"]
 [ext_resource type="Texture2D" uid="uid://yv4ibfy24r21" path="res://sprites/tilechatdeprikito-1.png.png" id="5_hko7v"]
 [ext_resource type="Texture2D" uid="uid://b5vodw0bachim" path="res://sprites/titulo-1.png.png" id="6_f3e1n"]
+[ext_resource type="PackedScene" uid="uid://bcjjgydd3g23x" path="res://teleporter.tscn" id="6_oq2ye"]
 [ext_resource type="Texture2D" uid="uid://bmlosu3qjj3hb" path="res://sprites/New Piskel-1.png.png" id="7_5ogpn"]
 [ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="8_sip8p"]
 [ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="9_j64rb"]
@@ -667,6 +668,16 @@ tile_set = SubResource("TileSet_0ncpc")
 
 [node name="DecoTile2" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_xkiio")
+
+[node name="Area2D" parent="." instance=ExtResource("6_oq2ye")]
+position = Vector2(543, 381)
+scale = Vector2(0.56, 0.56)
+destino = NodePath("../Area2D2")
+
+[node name="Area2D2" parent="." instance=ExtResource("6_oq2ye")]
+position = Vector2(736, 255)
+scale = Vector2(0.56, 0.56)
+destino = NodePath("../Area2D")
 
 [node name="player" parent="." instance=ExtResource("8_sip8p")]
 position = Vector2(233, 336)

@@ -2,7 +2,11 @@ extends CharacterBody2D
 
 @export var speed: int = 220
 @export var tiro_scene: PackedScene
+@export var animacaoTeletransporte: PackedScene
+var explosao = 0
 @onready var animations = $AnimationPlayer
+
+var teletransporte = false
 
 var pode_meter_bala = true
 # MOVIMENTO
@@ -56,10 +60,17 @@ func _physics_process(delta):
 	if direcao_tiro != Vector2.ZERO:
 		if pode_meter_bala == true:
 			shoot(direcao_tiro.normalized())
-		
-		
-	
 
 func _on_timer_timeout() -> void:
 	pode_meter_bala = true
-	pass # Replace with function body.
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("acao"):
+		explosao = animacaoTeletransporte.instantiate()
+		explosao.position = position
+		get_parent().add_child(explosao)
+		await get_tree().create_timer(0.5).timeout
+		teletransporte = true
+		
+	elif event.is_action_released("acao"):
+		teletransporte = false

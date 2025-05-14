@@ -768,7 +768,7 @@ nextScene = "res://Maaaain9.tscn"
 
 [node name="portal4" parent="Portas" instance=ExtResource("3_4qgsi")]
 position = Vector2(1156, 318)
-nextScene = "res://Maaaain9.tscn"
+nextScene = "res://Maaaain11.tscn"
 
 [node name="Player" type="Node" parent="."]
 
