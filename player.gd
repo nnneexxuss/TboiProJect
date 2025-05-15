@@ -6,10 +6,11 @@ extends CharacterBody2D
 var explosao = 0
 @onready var animations = $AnimationPlayer
 
-var teletransporte = false
 
+var teletransporte = false
 var pode_meter_bala = true
 # MOVIMENTO
+
 func handle_input():
 	var move_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").normalized()
 	velocity = move_direction * speed
@@ -54,6 +55,16 @@ func _physics_process(delta):
 	move_and_slide()
 	update_animation()
 	
+	if Globais.volta_teletransporte == true:
+		$".".visible = false
+		explosao = animacaoTeletransporte.instantiate()
+		explosao.position = position
+		get_parent().add_child(explosao)
+		await get_tree().create_timer(0.3).timeout
+		$".".visible = true
+		speed = 220
+		Globais.volta_teletransporte = false
+		
 	# Pega a direção do tiro
 	var direcao_tiro = Input.get_vector("tiroEsquerda", "tiroDireita", "tiroCima", "tiroBaixo")
 
@@ -65,11 +76,13 @@ func _on_timer_timeout() -> void:
 	pode_meter_bala = true
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("acao"):
+	if event.is_action_pressed("acao") and Globais.player_dentro:
 		explosao = animacaoTeletransporte.instantiate()
+		$".".visible = false
 		explosao.position = position
 		get_parent().add_child(explosao)
-		await get_tree().create_timer(0.5).timeout
+		speed = 0
+		await get_tree().create_timer(0.3).timeout
 		teletransporte = true
 		
 	elif event.is_action_released("acao"):
