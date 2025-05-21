@@ -682,6 +682,12 @@ destino = NodePath("../Area2D")
 [node name="player" parent="." instance=ExtResource("8_sip8p")]
 position = Vector2(233, 336)
 
-[node name="portal" parent="." instance=ExtResource("9_j64rb")]
-position = Vector2(48, 319)
+[node name="Marcadores" type="Node" parent="."]
+
+[node name="portal" parent="Marcadores" instance=ExtResource("9_j64rb")]
+position = Vector2(91, 344)
 nextScene = "res://Maaaain3.tscn"
+id_portal_destino = "cena3_portal1"
+
+[node name="cena8_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(156, 358)

@@ -543,12 +543,20 @@ tile_set = SubResource("TileSet_6kaok")
 [node name="player" parent="Player" instance=ExtResource("6_14ge2")]
 position = Vector2(571, 318)
 
-[node name="Portas" type="Node" parent="."]
+[node name="Marcadores" type="Node" parent="."]
 
-[node name="portal2" parent="Portas" instance=ExtResource("7_cic7p")]
-position = Vector2(961, 313)
+[node name="portal2" parent="Marcadores" instance=ExtResource("7_cic7p")]
+position = Vector2(1030, 345)
 nextScene = "res://Maaaain1.tscn"
+id_portal_destino = "cena1_portal3"
 
-[node name="portal3" parent="Portas" instance=ExtResource("7_cic7p")]
-position = Vector2(495, 586)
+[node name="portal3" parent="Marcadores" instance=ExtResource("7_cic7p")]
+position = Vector2(561, 629)
 nextScene = "res://Maaaain6.tscn"
+id_portal_destino = "cena6_portal"
+
+[node name="cena5_portal" type="Marker2D" parent="Marcadores"]
+position = Vector2(960, 345)
+
+[node name="cena5_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(568, 555)
