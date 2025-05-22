@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c728hdryg5ypd"
-path="res://.godot/imported/TileSetPjt-1.png-1.png.png-8e70ef4ef488cb33b97329e9dab32d8d.ctex"
+uid="uid://tybb6b01qpgu"
+path="res://.godot/imported/personagi-1.png.png-ca82de816186b3cf691929cb71c37f5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/TileSetPjt-1.png-1.png.png"
-dest_files=["res://.godot/imported/TileSetPjt-1.png-1.png.png-8e70ef4ef488cb33b97329e9dab32d8d.ctex"]
+source_file="res://sprites/personagi-1.png.png"
+dest_files=["res://.godot/imported/personagi-1.png.png-ca82de816186b3cf691929cb71c37f5b.ctex"]
 
 [params]
 
