@@ -1,6 +1,6 @@
-extends CharacterBody2D
+extends CharacterBody2D #player
 
-@export var speed: int = 220
+@export var speed: int = 350
 @export var tiro_scene: PackedScene
 @export var animacaoTeletransporte: PackedScene
 var explosao = 0
@@ -9,8 +9,19 @@ var explosao = 0
 
 var teletransporte = false
 var pode_meter_bala = true
-# MOVIMENTO
 
+func _ready() -> void:
+	var destino = Globais.ultimaPorta
+	var marcador = get_tree().current_scene.get_node_or_null("Marcadores/" + destino)
+	
+	if marcador:
+		position = marcador.global_position
+	else:
+		position = Vector2(Globais.ultima_pos_x, Globais.ultima_pos_y)
+		print("DEU RUIM")
+
+
+# MOVIMENTO
 func handle_input():
 	var move_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").normalized()
 	velocity = move_direction * speed
@@ -37,17 +48,14 @@ func shoot(direcao_tiro: Vector2):
 # ANIMAÇÃO
 func update_animation():
 	var direction = "Down"
-	if velocity.x < 0:
-		direction = "Left"
-	elif velocity.x > 0:
-		direction = "Right"
-	elif velocity.y < 0:
-		direction = "Up"
+	if velocity.x < 0: direction = "Left"
+	elif velocity.x > 0: direction = "Right"
+	elif velocity.y < 0: direction = "Up"
 
 	if velocity.length() > 0:
 		animations.play("walk" + direction)
 	else:
-		animations.play("idle" + direction) # Opcional: animação parada
+		animations.stop() # Opcional: animação parada
 
 # FUNÇÃO PRINCIPAL
 func _physics_process(delta):

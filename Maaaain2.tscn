@@ -1,7 +1,8 @@
-[gd_scene load_steps=31 format=4 uid="uid://bbfwbyqg3gixn"]
+[gd_scene load_steps=32 format=4 uid="uid://bbfwbyqg3gixn"]
 
 [ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="1_jjse8"]
 [ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="1_xmc7g"]
+[ext_resource type="Script" path="res://maaaain_2.gd" id="1_y6mdp"]
 [ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="2_2ug3h"]
 [ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="3_4qgsi"]
 [ext_resource type="Texture2D" uid="uid://cnetl0la5fewj" path="res://sprites/tilesetchãolayer.png" id="3_rgqr4"]
@@ -694,6 +695,7 @@ sources/2 = SubResource("TileSetAtlasSource_xljai")
 
 [node name="Mundinho3" type="Node2D"]
 position = Vector2(-15, -12)
+script = ExtResource("1_y6mdp")
 
 [node name="Cenario" type="Node" parent="."]
 
@@ -720,7 +722,7 @@ x_draw_order_reversed = true
 y_sort_enabled = true
 position = Vector2(817, -812)
 scale = Vector2(0.47, 0.47)
-tile_map_data = PackedByteArray("AAD5/4QAAQAQAAAAAAAJAHwAAAAYAAgAAAD0/4IAAAAYAAgAAGCy/7EAAgAAAAAAAADD/4sAAgAIAAAAAAC8/4sAAgAAAAAAAAAEAJ0AAgAAAAAAAAANALAAAgAIAAAAAAADAHoAAgAIAAAAAADA/2EAAgAYAAAAAADI/2EAAgAYAAAAAAAAACQAAgAYAAAAAAAQACUAAgAYAAAAAAAFALUAAgAYAAAAAAA=")
+tile_map_data = PackedByteArray("AAD5/4QAAQAQAAAAAAAJAHwAAAAYAAgAAAD0/4IAAAAYAAgAAGCy/7EAAgAAAAAAAADD/4sAAgAIAAAAAAC8/4sAAgAAAAAAAAAEAJ0AAgAAAAAAAAANALAAAgAIAAAAAAADAHoAAgAIAAAAAADA/2EAAgAYAAAAAADI/2EAAgAYAAAAAAAAACQAAgAYAAAAAAAFALUAAgAYAAAAAAAQACQAAgAYAAAAAAA=")
 tile_set = SubResource("TileSet_ylgbw")
 
 [node name="DecoTile3" type="TileMapLayer" parent="Cenario"]
@@ -752,25 +754,44 @@ energy = 4.35
 blend_mode = 2
 texture = ExtResource("11_h323p")
 
-[node name="Portas" type="Node" parent="."]
+[node name="Marcadores" type="Node" parent="."]
 
-[node name="portal" parent="Portas" instance=ExtResource("3_4qgsi")]
-position = Vector2(562, 794)
+[node name="portal" parent="Marcadores" instance=ExtResource("3_4qgsi")]
+position = Vector2(627, 820)
 nextScene = "res://Maaaain1.tscn"
+id_portal_destino = "cena1_portal1"
 
-[node name="portal2" parent="Portas" instance=ExtResource("3_4qgsi")]
-position = Vector2(816, -626)
+[node name="portal2" parent="Marcadores" instance=ExtResource("3_4qgsi")]
+position = Vector2(881, -599)
 nextScene = "res://Maaaain3.tscn"
+id_portal_destino = "cena3_portal2"
 
-[node name="portal3" parent="Portas" instance=ExtResource("3_4qgsi")]
-position = Vector2(-23, 336)
+[node name="portal3" parent="Marcadores" instance=ExtResource("3_4qgsi")]
+position = Vector2(31, 352)
 nextScene = "res://Maaaain9.tscn"
+id_portal_destino = "cena9_portal2"
 
-[node name="portal4" parent="Portas" instance=ExtResource("3_4qgsi")]
-position = Vector2(1156, 318)
+[node name="portal4" parent="Marcadores" instance=ExtResource("3_4qgsi")]
+position = Vector2(1224, 355)
 nextScene = "res://Maaaain11.tscn"
+id_portal_destino = "cena11_portal1"
+
+[node name="cena2_portal1" type="Marker2D" parent="Marcadores"]
+position = Vector2(627, 747)
+
+[node name="cena2_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(882, -530)
+
+[node name="cena2_portal3" type="Marker2D" parent="Marcadores"]
+position = Vector2(111, 368)
+
+[node name="cena2_portal4" type="Marker2D" parent="Marcadores"]
+position = Vector2(1152, 351)
 
 [node name="Player" type="Node" parent="."]
 
 [node name="player" parent="Player" instance=ExtResource("1_xmc7g")]
 position = Vector2(604, 384)
+
+[node name="Maaain1" type="Marker2D" parent="."]
+position = Vector2(646, 777)

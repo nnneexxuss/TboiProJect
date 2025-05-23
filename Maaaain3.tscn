@@ -595,10 +595,21 @@ tile_set = SubResource("TileSet_cbm8d")
 [node name="player" parent="." instance=ExtResource("2_7lod5")]
 position = Vector2(608, 467)
 
-[node name="portal" parent="." instance=ExtResource("4_wbhqj")]
-position = Vector2(555, 657)
-nextScene = "res://Maaaain2.tscn"
+[node name="Marcadores" type="Node2D" parent="."]
+position = Vector2(65, 27)
 
-[node name="portal2" parent="." instance=ExtResource("4_wbhqj")]
-position = Vector2(1096, 327)
+[node name="portal" parent="Marcadores" instance=ExtResource("4_wbhqj")]
+position = Vector2(558, 659)
+nextScene = "res://Maaaain2.tscn"
+id_portal_destino = "cena2_portal2"
+
+[node name="portal2" parent="Marcadores" instance=ExtResource("4_wbhqj")]
+position = Vector2(1094, 326)
 nextScene = "res://Maaaain8.tscn"
+id_portal_destino = "cena8_portal2"
+
+[node name="cena3_portal1" type="Marker2D" parent="Marcadores"]
+position = Vector2(1033, 329)
+
+[node name="cena3_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(557, 581)

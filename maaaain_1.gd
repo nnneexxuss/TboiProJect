@@ -1,10 +1,9 @@
-extends Node2D
+#extends Node2D
 
+#@onready var player: CharacterBody2D = $Player/player
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+#func _ready() -> void:
+	#if Globais.destination_level != "":
+		#var point = get_node(Globais.destination_level)
+		#if point:
+			#player.globais_position = point.globais_position 

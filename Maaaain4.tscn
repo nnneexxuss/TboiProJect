@@ -765,12 +765,22 @@ tile_map_data = PackedByteArray("AAD2/w0AAAAJAAIAAAD2/w4ADAAFAAkAAAD2/w8ADAAHAAo
 tile_set = SubResource("TileSet_0ncpc")
 
 [node name="player" parent="." instance=ExtResource("5_t8u7a")]
-position = Vector2(600, 313)
+position = Vector2(598, 307)
 
-[node name="portal" parent="." instance=ExtResource("6_eliw1")]
-position = Vector2(103, 287)
+[node name="Marcadores" type="Node" parent="."]
+
+[node name="portal" parent="Marcadores" instance=ExtResource("6_eliw1")]
+position = Vector2(149, 294)
 nextScene = "res://Maaaain1.tscn"
+id_portal_destino = "cena1_portal2"
 
-[node name="portal2" parent="." instance=ExtResource("6_eliw1")]
-position = Vector2(982, 285)
+[node name="portal2" parent="Marcadores" instance=ExtResource("6_eliw1")]
+position = Vector2(1034, 283)
 nextScene = "res://Maaaain7.tscn"
+id_portal_destino = "cena7_portal"
+
+[node name="cena4_portal1" type="Marker2D" parent="Marcadores"]
+position = Vector2(218, 306)
+
+[node name="cena4_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(977, 304)
