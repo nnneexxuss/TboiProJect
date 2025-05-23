@@ -1,6 +1,6 @@
 extends CharacterBody2D #player
 
-@export var speed: int = 350
+@export var speed: int = 220
 @export var tiro_scene: PackedScene
 @export var animacaoTeletransporte: PackedScene
 var explosao = 0
