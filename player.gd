@@ -5,8 +5,6 @@ extends CharacterBody2D #player
 @export var animacaoTeletransporte: PackedScene
 var explosao = 0
 @onready var animations = $AnimationPlayer
-
-
 var teletransporte = false
 var pode_meter_bala = true
 
@@ -19,7 +17,6 @@ func _ready() -> void:
 	else:
 		position = Vector2(Globais.ultima_pos_x, Globais.ultima_pos_y)
 		print("DEU RUIM")
-
 
 # MOVIMENTO
 func handle_input():
