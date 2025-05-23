@@ -609,10 +609,10 @@ position = Vector2(-15, -12)
 [node name="Cenario" type="Node" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Cenario"]
-offset_left = -687.0
-offset_top = -353.0
-offset_right = 1956.0
-offset_bottom = 1161.0
+offset_left = -397.0
+offset_top = -69.0
+offset_right = 2246.0
+offset_bottom = 1445.0
 color = Color(0, 0, 0, 1)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Cenario"]
@@ -648,8 +648,12 @@ tile_set = SubResource("TileSet_qdwwy")
 [node name="Portas" type="Node" parent="."]
 
 [node name="portal" parent="Portas" instance=ExtResource("11_knigb")]
-position = Vector2(558, 553)
+position = Vector2(560, 562)
 nextScene = "res://Maaaain12.tscn"
+id_portal_destino = "cena12_portal3"
+
+[node name="cena13_portal1" type="Marker2D" parent="Portas"]
+position = Vector2(563, 483)
 
 [node name="Player" type="Node" parent="."]
 

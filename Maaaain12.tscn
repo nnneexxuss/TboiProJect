@@ -785,15 +785,15 @@ sources/1 = SubResource("TileSetAtlasSource_sg2lp")
 sources/0 = SubResource("TileSetAtlasSource_71svx")
 
 [node name="Mundinho2" type="Node2D"]
-position = Vector2(-15, -12)
+position = Vector2(565, 304)
 scale = Vector2(1.05337, 0.971955)
 
 [node name="Cenario" type="Node" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Cenario"]
-offset_left = -687.0
+offset_left = -610.0
 offset_top = -353.0
-offset_right = 1956.0
+offset_right = 2033.0
 offset_bottom = 1161.0
 color = Color(0, 0, 0, 1)
 
@@ -835,18 +835,30 @@ tile_set = SubResource("TileSet_qdwwy")
 [node name="Portas" type="Node" parent="."]
 
 [node name="portal" parent="Portas" instance=ExtResource("9_4ei67")]
-position = Vector2(940, 282)
+position = Vector2(966, 286)
 nextScene = "res://Maaaain14.tscn"
+id_portal_destino = "cena14_portal1"
 
 [node name="portal2" parent="Portas" instance=ExtResource("9_4ei67")]
-position = Vector2(156, 283)
+position = Vector2(151, 283)
 nextScene = "res://Maaaain8.tscn"
+id_portal_destino = "cena8_portal3"
 
 [node name="portal3" parent="Portas" instance=ExtResource("9_4ei67")]
 position = Vector2(563, 102)
 nextScene = "res://Maaaain13.tscn"
+id_portal_destino = "cena13_portal1"
+
+[node name="cena12_portal1" type="Marker2D" parent="Portas"]
+position = Vector2(208, 287)
+
+[node name="cena12_portal2" type="Marker2D" parent="Portas"]
+position = Vector2(905, 297)
+
+[node name="cena12_portal3" type="Marker2D" parent="Portas"]
+position = Vector2(561, 174)
 
 [node name="Player" type="Node" parent="."]
 
 [node name="player" parent="Player" instance=ExtResource("10_ws742")]
-position = Vector2(411, 320)
+position = Vector2(564, 303)

@@ -661,8 +661,15 @@ tile_set = SubResource("TileSet_qdwwy")
 [node name="Portas" type="Node" parent="."]
 
 [node name="portal" parent="Portas" instance=ExtResource("12_lbwj7")]
-position = Vector2(557, 553)
+position = Vector2(561, 561)
 nextScene = "res://Maaaain14.tscn"
+id_portal_destino = "cena14_portal2"
+
+[node name="cena15_portal1" type="Marker2D" parent="Portas"]
+position = Vector2(561, 174)
+
+[node name="cena15_portal2" type="Marker2D" parent="Portas"]
+position = Vector2(558, 482)
 
 [node name="Player" type="Node" parent="."]
 

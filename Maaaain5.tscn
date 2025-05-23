@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="1_2cqjc"]
 [ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="2_6wsld"]
 [ext_resource type="Texture2D" uid="uid://bmlosu3qjj3hb" path="res://sprites/New Piskel-1.png.png" id="3_4n27m"]
-[ext_resource type="Texture2D" uid="uid://dxbligbgeiux" path="res://sprites/rocks_gehenna-1.png.png" id="4_1jhku"]
+[ext_resource type="Texture2D" uid="uid://by26exxj00xb2" path="res://sprites/rocks_gehenna-1.png.png" id="4_1jhku"]
 [ext_resource type="Texture2D" uid="uid://b5vodw0bachim" path="res://sprites/titulo-1.png.png" id="4_ckdw8"]
 [ext_resource type="Texture2D" uid="uid://cg7gudetod2l1" path="res://sprites/poupao.png" id="5_p8w2q"]
 [ext_resource type="Texture2D" uid="uid://cny3oe5h6omj6" path="res://sprites/Predas-1.png" id="6_0xl78"]
