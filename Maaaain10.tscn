@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ckglorkjlr6qs" path="res://sprites/Gehenna322.png" id="4_xcadq"]
 [ext_resource type="Texture2D" uid="uid://cny3oe5h6omj6" path="res://sprites/Predas-1.png" id="5_rhy73"]
 [ext_resource type="Texture2D" uid="uid://cg7gudetod2l1" path="res://sprites/poupao.png" id="6_1ubog"]
-[ext_resource type="Texture2D" uid="uid://dxbligbgeiux" path="res://sprites/rocks_gehenna-1.png.png" id="7_awunl"]
+[ext_resource type="Texture2D" uid="uid://by26exxj00xb2" path="res://sprites/rocks_gehenna-1.png.png" id="7_awunl"]
 [ext_resource type="Texture2D" uid="uid://b5vodw0bachim" path="res://sprites/titulo-1.png.png" id="7_qqo2d"]
 [ext_resource type="Texture2D" uid="uid://bmlosu3qjj3hb" path="res://sprites/New Piskel-1.png.png" id="8_m285r"]
 [ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="9_luqn2"]

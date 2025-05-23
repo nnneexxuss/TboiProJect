@@ -856,15 +856,23 @@ scale = Vector2(0.5, 0.5)
 tile_map_data = PackedByteArray("AABHAAoAAwAAAAAAAAA=")
 tile_set = SubResource("TileSet_qdwwy")
 
-[node name="Portas" type="Node" parent="."]
+[node name="Marcadores" type="Node" parent="."]
 
-[node name="portal2" parent="Portas" instance=ExtResource("11_fwlbf")]
-position = Vector2(159, 289)
+[node name="portal2" parent="Marcadores" instance=ExtResource("11_fwlbf")]
+position = Vector2(154, 289)
 nextScene = "res://Maaaain12.tscn"
+id_portal_destino = "cena12_portal3"
 
-[node name="portal3" parent="Portas" instance=ExtResource("11_fwlbf")]
-position = Vector2(560, 108)
+[node name="portal3" parent="Marcadores" instance=ExtResource("11_fwlbf")]
+position = Vector2(562, 108)
 nextScene = "res://Maaaain15.tscn"
+id_portal_destino = "cena15_portal2"
+
+[node name="cena14_portal1" type="Marker2D" parent="Marcadores"]
+position = Vector2(210, 300)
+
+[node name="cena14_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(560, 178)
 
 [node name="Player" type="Node" parent="."]
 

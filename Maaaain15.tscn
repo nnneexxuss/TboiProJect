@@ -658,11 +658,23 @@ y_sort_enabled = true
 scale = Vector2(0.35, 0.35)
 tile_set = SubResource("TileSet_qdwwy")
 
-[node name="Portas" type="Node" parent="."]
+[node name="Marcadores" type="Node" parent="."]
 
-[node name="portal" parent="Portas" instance=ExtResource("12_lbwj7")]
-position = Vector2(557, 553)
+[node name="portal" parent="Marcadores" instance=ExtResource("12_lbwj7")]
+position = Vector2(563, 562)
 nextScene = "res://Maaaain14.tscn"
+id_portal_destino = "cena14_portal2"
+
+[node name="portal2" parent="Marcadores" instance=ExtResource("12_lbwj7")]
+position = Vector2(561, 103)
+nextScene = "res://Maaaain16.tscn"
+id_portal_destino = "cena16_portal1"
+
+[node name="cena15_portal2" type="Marker2D" parent="Marcadores"]
+position = Vector2(562, 486)
+
+[node name="cena15_portal3" type="Marker2D" parent="Marcadores"]
+position = Vector2(561, 170)
 
 [node name="Player" type="Node" parent="."]
 
