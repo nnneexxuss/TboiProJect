@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://yv4ibfy24r21" path="res://sprites/tilechatdeprikito-1.png.png" id="4_mgyw0"]
 [ext_resource type="Texture2D" uid="uid://ckglorkjlr6qs" path="res://sprites/Gehenna322.png" id="5_vda71"]
 [ext_resource type="Texture2D" uid="uid://cny3oe5h6omj6" path="res://sprites/Predas-1.png" id="6_qet0v"]
-[ext_resource type="Texture2D" uid="uid://dxbligbgeiux" path="res://sprites/rocks_gehenna-1.png.png" id="7_xv8qv"]
+[ext_resource type="Texture2D" uid="uid://by26exxj00xb2" path="res://sprites/rocks_gehenna-1.png.png" id="7_xv8qv"]
 [ext_resource type="Texture2D" uid="uid://cg7gudetod2l1" path="res://sprites/poupao.png" id="8_msln5"]
 [ext_resource type="Texture2D" uid="uid://b5vodw0bachim" path="res://sprites/titulo-1.png.png" id="9_lbe4r"]
 [ext_resource type="Texture2D" uid="uid://bmlosu3qjj3hb" path="res://sprites/New Piskel-1.png.png" id="10_elviw"]
@@ -648,10 +648,10 @@ tile_set = SubResource("TileSet_qdwwy")
 [node name="Portas" type="Node" parent="."]
 
 [node name="portal" parent="Portas" instance=ExtResource("11_knigb")]
-position = Vector2(498, 532)
+position = Vector2(558, 553)
 nextScene = "res://Maaaain12.tscn"
 
 [node name="Player" type="Node" parent="."]
 
 [node name="player" parent="Player" instance=ExtResource("12_8cj0h")]
-position = Vector2(563, 472)
+position = Vector2(728, 496)

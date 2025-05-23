@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cny3oe5h6omj6" path="res://sprites/Predas-1.png" id="5_07wqo"]
 [ext_resource type="Texture2D" uid="uid://cg7gudetod2l1" path="res://sprites/poupao.png" id="6_ijr11"]
 [ext_resource type="Texture2D" uid="uid://b5vodw0bachim" path="res://sprites/titulo-1.png.png" id="7_0o28r"]
-[ext_resource type="Texture2D" uid="uid://dxbligbgeiux" path="res://sprites/rocks_gehenna-1.png.png" id="7_2pfcg"]
+[ext_resource type="Texture2D" uid="uid://by26exxj00xb2" path="res://sprites/rocks_gehenna-1.png.png" id="7_2pfcg"]
 [ext_resource type="Texture2D" uid="uid://bmlosu3qjj3hb" path="res://sprites/New Piskel-1.png.png" id="8_ylu3k"]
 [ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="9_4ei67"]
 [ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="10_ws742"]
@@ -786,6 +786,7 @@ sources/0 = SubResource("TileSetAtlasSource_71svx")
 
 [node name="Mundinho2" type="Node2D"]
 position = Vector2(-15, -12)
+scale = Vector2(1.05337, 0.971955)
 
 [node name="Cenario" type="Node" parent="."]
 
@@ -834,18 +835,18 @@ tile_set = SubResource("TileSet_qdwwy")
 [node name="Portas" type="Node" parent="."]
 
 [node name="portal" parent="Portas" instance=ExtResource("9_4ei67")]
-position = Vector2(896, 246)
+position = Vector2(940, 282)
 nextScene = "res://Maaaain14.tscn"
 
 [node name="portal2" parent="Portas" instance=ExtResource("9_4ei67")]
-position = Vector2(95, 250)
+position = Vector2(156, 283)
 nextScene = "res://Maaaain8.tscn"
 
 [node name="portal3" parent="Portas" instance=ExtResource("9_4ei67")]
-position = Vector2(497, 73)
+position = Vector2(563, 102)
 nextScene = "res://Maaaain13.tscn"
 
 [node name="Player" type="Node" parent="."]
 
 [node name="player" parent="Player" instance=ExtResource("10_ws742")]
-position = Vector2(571, 318)
+position = Vector2(411, 320)
