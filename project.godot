@@ -21,10 +21,13 @@ Globais="*res://globais.gd"
 
 [display]
 
-window/size/mode=2
 window/size/window_width_override=889
 window/size/window_height_override=644
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+Enemy=""
 
 [input]
 

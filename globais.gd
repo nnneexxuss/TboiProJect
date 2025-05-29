@@ -3,6 +3,7 @@ extends Node #globais
 var direcaoTiro
 var player_dentro = false
 var volta_teletransporte = false
+var destination_level : String = ""
 
 
 var ultimaPorta: String = "Inicio"

@@ -575,10 +575,10 @@ script = ExtResource("1_vyact")
 [node name="Cenario" type="Node" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Cenario"]
-offset_left = -687.0
-offset_top = -353.0
-offset_right = 1956.0
-offset_bottom = 1161.0
+offset_left = -541.0
+offset_top = -255.0
+offset_right = 2102.0
+offset_bottom = 1259.0
 color = Color(0, 0, 0, 1)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Cenario"]
