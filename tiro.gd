@@ -14,7 +14,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print("entrando no corpo")
 		$AnimatedSprite2D.play("explosão")
 		explosao = true
-		body.estadoMorte = true
+		body.vida_monstro -= 1
 		$CollisionShape2D.disabled = true
 		$CollisionShape2D.visible = false
 		await $AnimatedSprite2D.animation_finished

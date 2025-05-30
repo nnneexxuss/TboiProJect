@@ -1,14 +1,15 @@
-[gd_scene load_steps=13 format=4 uid="uid://t7yhmwod071e"]
+[gd_scene load_steps=14 format=4 uid="uid://t7yhmwod071e"]
 
-[ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="1_pg7d8"]
-[ext_resource type="Script" path="res://maaaain_2.gd" id="1_vyact"]
-[ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="2_jf1rq"]
-[ext_resource type="Texture2D" uid="uid://bt204lv1t56ki" path="res://sprites/Controls-1.png.png" id="3_fnf47"]
-[ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="4_wbnd8"]
-[ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="5_lmfqq"]
+[ext_resource type="Script" path="res://maaaain_2.gd" id="1_2h70v"]
+[ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="2_1cp15"]
+[ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="3_d5crv"]
+[ext_resource type="Texture2D" uid="uid://bt204lv1t56ki" path="res://sprites/Controls-1.png.png" id="4_p2cb6"]
+[ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="5_ywqpm"]
+[ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="6_0815k"]
+[ext_resource type="PackedScene" uid="uid://ugyh40oi5h53" path="res://Inimigo.tscn" id="7_41884"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf17r"]
-texture = ExtResource("1_pg7d8")
+texture = ExtResource("2_1cp15")
 texture_region_size = Vector2i(64, 64)
 8:0/0 = 0
 8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
@@ -207,7 +208,7 @@ texture_region_size = Vector2i(64, 64)
 11:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6sxff"]
-texture = ExtResource("2_jf1rq")
+texture = ExtResource("3_d5crv")
 texture_region_size = Vector2i(64, 64)
 8:0/0 = 0
 8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
@@ -404,7 +405,7 @@ texture_region_size = Vector2i(64, 64)
 6:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ulop2"]
-texture = ExtResource("3_fnf47")
+texture = ExtResource("4_p2cb6")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -570,7 +571,7 @@ sources/3 = SubResource("TileSetAtlasSource_ex0an")
 
 [node name="Mundinho3" type="Node2D"]
 position = Vector2(-54, -11)
-script = ExtResource("1_vyact")
+script = ExtResource("1_2h70v")
 
 [node name="Cenario" type="Node" parent="."]
 
@@ -600,22 +601,26 @@ position = Vector2(981, 369)
 [node name="cena1_portal3" type="Marker2D" parent="Marcadores"]
 position = Vector2(218, 353)
 
-[node name="portal" parent="Marcadores" instance=ExtResource("4_wbnd8")]
+[node name="portal" parent="Marcadores" instance=ExtResource("5_ywqpm")]
 position = Vector2(560, 166)
 nextScene = "res://Maaaain2.tscn"
 id_portal_destino = "cena2_portal1"
 
-[node name="portal2" parent="Marcadores" instance=ExtResource("4_wbnd8")]
+[node name="portal2" parent="Marcadores" instance=ExtResource("5_ywqpm")]
 position = Vector2(1036, 351)
 nextScene = "res://Maaaain4.tscn"
 id_portal_destino = "cena4_portal1"
 
-[node name="portal3" parent="Marcadores" instance=ExtResource("4_wbnd8")]
+[node name="portal3" parent="Marcadores" instance=ExtResource("5_ywqpm")]
 position = Vector2(153, 344)
 nextScene = "res://Maaaain5.tscn"
 id_portal_destino = "cena5_portal"
 
 [node name="Player" type="Node" parent="."]
 
-[node name="player" parent="Player" instance=ExtResource("5_lmfqq")]
+[node name="player" parent="Player" instance=ExtResource("6_0815k")]
 position = Vector2(568, 373)
+
+[node name="Enemy" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("7_41884")]
+position = Vector2(308, 255)
+Player = NodePath("../player")

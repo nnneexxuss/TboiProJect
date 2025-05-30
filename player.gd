@@ -54,6 +54,10 @@ func update_animation():
 	else:
 		animations.stop() # Opcional: animação parada
 
+
+func levar_dano(quantidade: int) -> void:
+	Globais.vida_atual = max(Globais.vida_atual - quantidade, 0)
+
 # FUNÇÃO PRINCIPAL
 func _physics_process(delta):
 	handle_input()

@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://drpsuq3w2t8cd"]
+[gd_scene load_steps=14 format=3 uid="uid://drpsuq3w2t8cd"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_rbigd"]
 [ext_resource type="PackedScene" uid="uid://d00b4eot1aldj" path="res://tiro.tscn" id="2_r6bhn"]
 [ext_resource type="PackedScene" uid="uid://bag6pq6vp844u" path="res://explosãoPlayer.tscn" id="3_mxtbn"]
 [ext_resource type="Texture2D" uid="uid://kgerst4racw8" path="res://sprites/bunecu-1.png.png" id="4_52t15"]
+[ext_resource type="PackedScene" uid="uid://bu3mlmjnjb5ck" path="res://hud.tscn" id="5_1h136"]
 
 [sub_resource type="Animation" id="Animation_gg5rj"]
 resource_name = "MoveDown"
@@ -138,5 +139,7 @@ offset = Vector2(10, 0)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 14)
 shape = SubResource("RectangleShape2D_g2mqh")
+
+[node name="HUD" parent="." instance=ExtResource("5_1h136")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
