@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=30 format=4 uid="uid://bg4j2t0m51rtf"]
+=======
+[gd_scene load_steps=29 format=4 uid="uid://bg4j2t0m51rtf"]
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 
 [ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="1_t3bvf"]
 [ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="2_3yc4c"]
@@ -12,7 +16,10 @@
 [ext_resource type="Texture2D" uid="uid://cny3oe5h6omj6" path="res://sprites/Predas-1.png" id="9_12r7q"]
 [ext_resource type="Texture2D" uid="uid://ckglorkjlr6qs" path="res://sprites/Gehenna322.png" id="10_vayq0"]
 [ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="12_jexfp"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://6rsr8omhcvro" path="res://teladevitoria.tscn" id="13_gbeow"]
+=======
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf17r"]
 texture = ExtResource("1_t3bvf")
@@ -766,6 +773,9 @@ position = Vector2(233, 336)
 
 [node name="cena16_portal1" type="Marker2D" parent="Marcadores"]
 position = Vector2(607, 560)
+<<<<<<< HEAD
 
 [node name="Node2D" parent="." instance=ExtResource("13_gbeow")]
 position = Vector2(621, 573)
+=======
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d

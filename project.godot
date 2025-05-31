@@ -21,7 +21,10 @@ Globais="*res://globais.gd"
 
 [display]
 
+<<<<<<< HEAD
 window/size/mode=3
+=======
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 window/size/window_width_override=889
 window/size/window_height_override=644
 window/stretch/mode="canvas_items"

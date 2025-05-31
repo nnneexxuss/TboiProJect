@@ -5,7 +5,11 @@ extends CharacterBody2D #inimigo
 @onready var sprite: AnimatedSprite2D = $Sprite2D
 
 @export var Player: CharacterBody2D
+<<<<<<< HEAD
 @export var Speed: float = 200
+=======
+@export var Speed: float = 100
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 var perseguindo := false
 var estadoMorte = false
 var vida_monstro = 4

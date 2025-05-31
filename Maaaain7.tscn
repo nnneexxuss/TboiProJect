@@ -1351,6 +1351,7 @@ position = Vector2(140, 359)
 
 [node name="player" parent="Player" instance=ExtResource("5_nahea")]
 position = Vector2(507, 346)
+<<<<<<< HEAD
 
 [node name="Enemy" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("7_dicip")]
 position = Vector2(920, 280)
@@ -1363,3 +1364,5 @@ Player = NodePath("../player")
 [node name="Enemy3" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("7_dicip")]
 position = Vector2(553, 481)
 Player = NodePath("../player")
+=======
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d

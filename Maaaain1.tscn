@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=13 format=4 uid="uid://t7yhmwod071e"]
+=======
+[gd_scene load_steps=14 format=4 uid="uid://t7yhmwod071e"]
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 
 [ext_resource type="Script" path="res://maaaain_2.gd" id="1_2h70v"]
 [ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="2_1cp15"]
@@ -6,6 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://bt204lv1t56ki" path="res://sprites/Controls-1.png.png" id="4_p2cb6"]
 [ext_resource type="PackedScene" uid="uid://0q076ik5bca" path="res://portal.tscn" id="5_ywqpm"]
 [ext_resource type="PackedScene" uid="uid://drpsuq3w2t8cd" path="res://player.tscn" id="6_0815k"]
+<<<<<<< HEAD
+=======
+[ext_resource type="PackedScene" uid="uid://ugyh40oi5h53" path="res://Inimigo.tscn" id="7_41884"]
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf17r"]
 texture = ExtResource("2_1cp15")
@@ -619,3 +627,10 @@ id_portal_destino = "cena5_portal"
 
 [node name="player" parent="Player" instance=ExtResource("6_0815k")]
 position = Vector2(568, 373)
+<<<<<<< HEAD
+=======
+
+[node name="Enemy" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("7_41884")]
+position = Vector2(308, 255)
+Player = NodePath("../player")
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d

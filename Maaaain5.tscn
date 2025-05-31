@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=150 format=4 uid="uid://n0kmn2s8m7f8"]
+=======
+[gd_scene load_steps=24 format=4 uid="uid://n0kmn2s8m7f8"]
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 
 [ext_resource type="Texture2D" uid="uid://c2l2cn0y0ovas" path="res://sprites/area-2png.png" id="1_2cqjc"]
 [ext_resource type="Texture2D" uid="uid://fpcbiq6padwt" path="res://sprites/TileSetPjt-1.png.png" id="2_6wsld"]
@@ -1429,6 +1433,7 @@ tile_set = SubResource("TileSet_6kaok")
 [node name="player" parent="Player" instance=ExtResource("6_14ge2")]
 position = Vector2(571, 318)
 
+<<<<<<< HEAD
 [node name="Enemy" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("9_jql6d")]
 position = Vector2(564, 194)
 Player = NodePath("../player")
@@ -1443,6 +1448,10 @@ Player = NodePath("../player")
 
 [node name="Marcadores" type="Node" parent="."]
 
+=======
+[node name="Marcadores" type="Node" parent="."]
+
+>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 [node name="portal2" parent="Marcadores" instance=ExtResource("7_cic7p")]
 position = Vector2(1030, 345)
 nextScene = "res://Maaaain1.tscn"
