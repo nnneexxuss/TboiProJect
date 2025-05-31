@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byrrx0f2t8otd"
-path="res://.godot/imported/essabost-1.png.png-66a46db9c1b1cabda2d82590096ba7a8.ctex"
+uid="uid://bbk42y12hcbbc"
+path="res://.godot/imported/barraTotal.png-95d44263388cf67e6da5fd4a6ee694ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/essabost-1.png.png"
-dest_files=["res://.godot/imported/essabost-1.png.png-66a46db9c1b1cabda2d82590096ba7a8.ctex"]
+source_file="res://sprites/barraTotal.png"
+dest_files=["res://.godot/imported/barraTotal.png-95d44263388cf67e6da5fd4a6ee694ad.ctex"]
 
 [params]
 

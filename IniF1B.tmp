@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://ugyh40oi5h53"]
+
+[ext_resource type="Texture2D" uid="uid://bt0mhgh8senec" path="res://sprites/Enemigo1.png" id="1_i6q5m"]
+[ext_resource type="Script" path="res://inimigo.gd" id="1_yyyl5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rarc"]
+size = Vector2(14, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j537b"]
+size = Vector2(363.529, 127.941)
+
+[node name="Enemy" type="CharacterBody2D"]
+scale = Vector2(3.4, 3.4)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_yyyl5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_i6q5m")
+hframes = 4
+vframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_0rarc")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(-8.97576e-06, 0.735293)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_j537b")
+debug_color = Color(1, 0, 0.101961, 0.309804)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_DetectionArea_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_DetectionArea_body_exited"]

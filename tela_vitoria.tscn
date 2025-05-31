@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://djqoy5botm86p"]
+
+[ext_resource type="Script" path="res://tela_vitoria.gd" id="1_2giyu"]
+[ext_resource type="Texture2D" uid="uid://dftjjcolafdq3" path="res://sprites/gamewin-1.png.png" id="1_h705x"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_r7phh"]
+font_size = 31
+font_color = Color(0.0392157, 1, 1, 1)
+
+[node name="tela_vitoria" type="Node2D"]
+script = ExtResource("1_2giyu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(582, 314)
+scale = Vector2(1.09028, 1.02778)
+texture = ExtResource("1_h705x")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 765.0
+offset_top = 38.0
+offset_right = 1145.0
+offset_bottom = 423.0
+text = "you redemeed yourself from your sins, now you can forever and ever rest in peace for eternity."
+label_settings = SubResource("LabelSettings_r7phh")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 3

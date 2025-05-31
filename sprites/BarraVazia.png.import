@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7xmil2llohts"
-path="res://.godot/imported/spraitesheti.png-93074b9e83aec831cc03b4233b01e27e.ctex"
+uid="uid://ciuo4834uarpo"
+path="res://.godot/imported/BarraVazia.png-d29019cf076173d6e42fa81d8bedfd56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/spraitesheti.png"
-dest_files=["res://.godot/imported/spraitesheti.png-93074b9e83aec831cc03b4233b01e27e.ctex"]
+source_file="res://sprites/BarraVazia.png"
+dest_files=["res://.godot/imported/BarraVazia.png-d29019cf076173d6e42fa81d8bedfd56.ctex"]
 
 [params]
 

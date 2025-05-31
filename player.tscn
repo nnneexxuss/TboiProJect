@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://drpsuq3w2t8cd"]
+[gd_scene load_steps=14 format=3 uid="uid://drpsuq3w2t8cd"]
 
-[ext_resource type="Texture2D" uid="uid://bt1ekae1pldpa" path="res://sprites/SpriteSheet.png" id="1_npd0c"]
 [ext_resource type="Script" path="res://player.gd" id="1_rbigd"]
 [ext_resource type="PackedScene" uid="uid://d00b4eot1aldj" path="res://tiro.tscn" id="2_r6bhn"]
 [ext_resource type="PackedScene" uid="uid://bag6pq6vp844u" path="res://explosãoPlayer.tscn" id="3_mxtbn"]
+[ext_resource type="Texture2D" uid="uid://kgerst4racw8" path="res://sprites/bunecu-1.png.png" id="4_52t15"]
+[ext_resource type="PackedScene" uid="uid://bu3mlmjnjb5ck" path="res://hud.tscn" id="5_1h136"]
 
 [sub_resource type="Animation" id="Animation_gg5rj"]
 resource_name = "MoveDown"
@@ -111,6 +112,7 @@ _data = {
 size = Vector2(38, 12)
 
 [node name="Personagem" type="CharacterBody2D" groups=["player"]]
+collision_mask = 3
 script = ExtResource("1_rbigd")
 tiro_scene = ExtResource("2_r6bhn")
 animacaoTeletransporte = ExtResource("3_mxtbn")
@@ -118,7 +120,7 @@ animacaoTeletransporte = ExtResource("3_mxtbn")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, -4)
 scale = Vector2(2.625, 2.96875)
-texture = ExtResource("1_npd0c")
+texture = ExtResource("4_52t15")
 hframes = 4
 vframes = 7
 
@@ -137,5 +139,9 @@ offset = Vector2(10, 0)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 14)
 shape = SubResource("RectangleShape2D_g2mqh")
+
+[node name="HUD" parent="." instance=ExtResource("5_1h136")]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

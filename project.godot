@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="TBOIPROJECT"
-run/main_scene="res://Maaaain1.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -21,10 +21,14 @@ Globais="*res://globais.gd"
 
 [display]
 
-window/size/mode=2
+window/size/mode=3
 window/size/window_width_override=889
 window/size/window_height_override=644
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+Enemy=""
 
 [input]
 
