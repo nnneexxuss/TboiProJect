@@ -842,11 +842,6 @@ destino = NodePath("../Area2D")
 
 [node name="Marcadores" type="Node" parent="."]
 
-<<<<<<< HEAD
-=======
-[node name="Marcadores" type="Node" parent="."]
-
->>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 [node name="portal" parent="Marcadores" instance=ExtResource("9_j64rb")]
 position = Vector2(91, 344)
 nextScene = "res://Maaaain3.tscn"
@@ -862,7 +857,6 @@ position = Vector2(156, 358)
 
 [node name="cena8_portal3" type="Marker2D" parent="Marcadores"]
 position = Vector2(996, 370)
-<<<<<<< HEAD
 
 [node name="Player" type="Node" parent="."]
 
@@ -876,5 +870,3 @@ Player = NodePath("../player")
 [node name="Enemy2" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("11_wvdn0")]
 position = Vector2(478, 487)
 Player = NodePath("../player")
-=======
->>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d

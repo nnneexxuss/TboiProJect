@@ -766,22 +766,11 @@ tile_set = SubResource("TileSet_cbm8d")
 [node name="Marcadores" type="Node2D" parent="."]
 position = Vector2(65, 27)
 
-<<<<<<< HEAD
 [node name="portal" parent="Marcadores" instance=ExtResource("4_wbhqj")]
 position = Vector2(558, 659)
 nextScene = "res://Maaaain2.tscn"
 id_portal_destino = "cena2_portal2"
 
-=======
-[node name="Marcadores" type="Node2D" parent="."]
-position = Vector2(65, 27)
-
-[node name="portal" parent="Marcadores" instance=ExtResource("4_wbhqj")]
-position = Vector2(558, 659)
-nextScene = "res://Maaaain2.tscn"
-id_portal_destino = "cena2_portal2"
-
->>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 [node name="portal2" parent="Marcadores" instance=ExtResource("4_wbhqj")]
 position = Vector2(1094, 326)
 nextScene = "res://Maaaain8.tscn"
@@ -792,7 +781,6 @@ position = Vector2(1033, 329)
 
 [node name="cena3_portal2" type="Marker2D" parent="Marcadores"]
 position = Vector2(557, 581)
-<<<<<<< HEAD
 
 [node name="Node" type="Node" parent="."]
 
@@ -806,5 +794,3 @@ Player = NodePath("../player")
 [node name="Enemy2" parent="Node" node_paths=PackedStringArray("Player") instance=ExtResource("11_g7j7q")]
 position = Vector2(837, 205)
 Player = NodePath("../player")
-=======
->>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
