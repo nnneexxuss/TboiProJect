@@ -1729,15 +1729,10 @@ position = Vector2(631, 765)
 position = Vector2(1134, 687)
 Player = NodePath("../player")
 
-<<<<<<< HEAD
 [node name="Enemy3" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("15_j4flu")]
 position = Vector2(624, 196)
 Player = NodePath("../player")
 
 [node name="Enemy2" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("15_j4flu")]
 position = Vector2(1030, -24)
-=======
-[node name="Enemy2" parent="Player" node_paths=PackedStringArray("Player") instance=ExtResource("15_j4flu")]
-position = Vector2(175, -79)
->>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 Player = NodePath("../player")

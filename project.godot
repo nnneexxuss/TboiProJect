@@ -21,7 +21,6 @@ Globais="*res://globais.gd"
 
 [display]
 
-window/size/mode=3
 window/size/window_width_override=889
 window/size/window_height_override=644
 window/stretch/mode="canvas_items"
