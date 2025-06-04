@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:sprites/CAPAPROJETO-1.png.png.import
-uid="uid://bgaov6ldoajuu"
+uid="uid://crye8jxfu0sfr"
 path="res://.godot/imported/CAPAPROJETO-1.png.png-0a233306f68001b8d9288d732a4185a8.ctex"
-========
-uid="uid://c0gp5ygbgkwu"
-path="res://.godot/imported/CAPA JOGO-1.png.png-bbb5fb3c024f1214dcc3a4337f2a8a97.ctex"
->>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d:sprites/CAPA JOGO-1.png.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:sprites/CAPAPROJETO-1.png.png.import
 source_file="res://sprites/CAPAPROJETO-1.png.png"
 dest_files=["res://.godot/imported/CAPAPROJETO-1.png.png-0a233306f68001b8d9288d732a4185a8.ctex"]
-========
-source_file="res://sprites/CAPA JOGO-1.png.png"
-dest_files=["res://.godot/imported/CAPA JOGO-1.png.png-bbb5fb3c024f1214dcc3a4337f2a8a97.ctex"]
->>>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d:sprites/CAPA JOGO-1.png.png.import
 
 [params]
 

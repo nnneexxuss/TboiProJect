@@ -141,10 +141,7 @@ position = Vector2(1, 14)
 shape = SubResource("RectangleShape2D_g2mqh")
 
 [node name="HUD" parent="." instance=ExtResource("5_1h136")]
-<<<<<<< HEAD
 scale = Vector2(2, 2)
 transform = Transform2D(2, 0, 0, 2, 0, 0)
-=======
->>>>>>> 34a8c141a0b81a466691dd7f9fbfd595be42829d
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
